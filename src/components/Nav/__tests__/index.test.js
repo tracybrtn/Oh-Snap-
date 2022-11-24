@@ -8,13 +8,13 @@ afterEach(cleanup);
 describe('Nav component', () => {
     // baseline test
     it('renders', () => {
-      render(<Nav />);
+      render(<Nav/>);
     });
  
   // snapshot test
     it('matches snapshot', () => {
       const { asFragment } = render(<Nav />);
-      // assert value comparison
+
       expect(asFragment()).toMatchSnapshot();
     });
   })
